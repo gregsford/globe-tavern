@@ -1,0 +1,66 @@
+@font-face {
+    font-family: LOKICOLA;
+    src: url(LOKICOLA.TTF);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image {
+    background: url(images/fb-pic1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.logo {
+    font-family: 'LOKICOLA';
+    font-size: 2.5rem;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.welcome {
+    width: auto;
+    height: 50vh;
+    margin-top: 50vh;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.welcome p {
+    text-transform: uppercase;
+}
+
+.hoo {
+    padding: 10px 0;
+    background-color: rgb(22, 73, 35);
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.li-day {
+    text-align: center;
+    list-style-type: none;
+}
+
+.foot {
+    background-color: black;
+    height: 10vh;
+    text-align: center;
+    padding: 2.5vh;
+}
+
+.fa-brands {
+    color: white;
+}
