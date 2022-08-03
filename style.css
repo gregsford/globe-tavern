@@ -9,12 +9,13 @@
     padding: 0;
 }
 
-.bg-image {
-    background: url(images/fb-pic1.jpg) no-repeat center center fixed;
+body {
+    background-color: rgb(0, 71, 18);
+    /* background: url(images/fb-pic1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .navbar {
@@ -39,12 +40,32 @@
 }
 
 .welcome p {
+    font-size: 20px;
     text-transform: uppercase;
 }
 
+.welcome-desc,
+.blockquote-footer,
+cite {
+    color: rgb(255, 145, 0);
+}
+
+.blockquote p {
+    color: white;
+}
+
+blockquote,
+cite {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.address {
+    margin-top: -200px;
+}
+
 .hoo {
-    padding: 10px 0;
-    background-color: rgb(22, 73, 35);
+    padding: 25px 0;
+    /* background-color: rgb(22, 73, 35); */
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -52,6 +73,7 @@
 .li-day {
     text-align: center;
     list-style-type: none;
+    padding: 4px;
 }
 
 .foot {
@@ -63,4 +85,8 @@
 
 .fa-brands {
     color: white;
+}
+
+ul {
+    margin-top: -200px;
 }
