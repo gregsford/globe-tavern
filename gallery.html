@@ -18,39 +18,60 @@
 
 <body>
 
-  <nav class="navbar navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="#">The Globe Tavern</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar">
+      <a class="navbar-brand logo" href="index.html">The Globe Tavern</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="events.html">Events</a>
+          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </div>
       </div>
     </div>
   </nav>
+
+  <div class="container text-center gallery"> 
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+      <div class="col-6">
+        <img src="images/fb-pic.jpg" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/fb-pic1.jpg" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/gt1.jpg" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/gt3.jpg" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/gt8.jpg" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/gt4.jpg" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/gt2.jpg" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/gt5.png" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/gt6.png" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6">
+        <img src="images/gt7.png" id="galleryPic" class="img-fluid rounded" alt="">
+      </div>
+      
+    </div>
+  </div>
+  
 
   <footer>
     <div class="foot">

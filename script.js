@@ -1,0 +1,1 @@
+const galleryPic = document.getElementById("galleryPic");
