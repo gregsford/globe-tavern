@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: rgb(0, 71, 18);
+    background: linear-gradient(rgb(1, 126, 32), rgb(0, 71, 18));
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -21,6 +21,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -200px;
 }
 
 .reveal {
@@ -47,7 +48,6 @@ section {
 .nav-link {
     text-align: center;
 }
-
 
 
 footer {
