@@ -1,0 +1,77 @@
+@font-face {
+    font-family: LOKICOLA;
+    src: url(LOKICOLA.TTF);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: linear-gradient(rgb(1, 126, 32), rgb(0, 71, 18));
+}
+
+/* NAVIGATION */
+.navbar {
+    background-color: black;
+}
+
+.logo {
+    font-family: 'LOKICOLA';
+    font-size: 2.5rem;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+
+/* GALLERY */
+.gallery {
+    padding: 125px 0;
+}
+
+.gallery img {
+    max-width: 100%;
+    background: rgb(147, 231, 147);
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#gallery-popup .modal-img {
+    width: 100%;
+}
+
+.modal-header {
+    background-color: rgb(243, 130, 0);
+    border-bottom: 40px solid white;
+}
+
+.modal-body {
+    background: rgb(0, 151, 38);
+}
+
+/* FOOTER */
+footer {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foot {
+    background-color: black;
+    height: 8vh;
+    text-align: center;
+    padding: 2.5vh;
+    width: 100%;
+    margin-top: auto;
+}
+
+.fa-brands {
+    color: white;
+}
