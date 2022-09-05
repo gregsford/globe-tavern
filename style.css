@@ -41,10 +41,11 @@ body {
     /* WELCOME */
     .welcome {
         width: 100%;
-        height: 50vh;
-        margin-top: 50vh;
+        height: 25vh;
+        margin-top: 25vh;
         color: white;
         font-family: 'Montserrat Alternates', sans-serif;
+        text-shadow: 2px 2px black;
     }
 
     .welcome p {
@@ -98,10 +99,17 @@ body {
 
     /* ADDRESS */
     .address {
-        margin-top: -200px;
+        margin-top: -175px;
+    }
+
+    .address h2,
+    .address h3,
+    .address p {
+        text-shadow: none;
     }
 
     .hoo {
+        margin-top: -100px;
         padding: 25px 0;
         color: white;
         font-family: 'Montserrat Alternates', sans-serif;
@@ -297,4 +305,3 @@ body {
             animation: slideInFromBottom 2.5s ease-in;
         }
     }
-        
