@@ -1,32 +1,10 @@
-@font-face {
-    font-family: LOKICOLA;
-    src: url(LOKICOLA.TTF);
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
-
 body {
-    background: linear-gradient(rgb(1, 126, 32), rgb(0, 71, 18));
+    position: relative;
 }
 
-/* NAVIGATION */
-.navbar {
-    background-color: black;
+.nav-links ul {
+    margin-top: 15px;
 }
-
-.logo {
-    font-family: 'LOKICOLA';
-    font-size: 2.5rem;
-}
-
-.nav-link {
-    text-align: center;
-}
-
 
 /* GALLERY */
 .gallery {
@@ -56,22 +34,13 @@ body {
     background: rgb(0, 151, 38);
 }
 
-/* FOOTER */
 footer {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin-bottom: -35px;
 }
 
-footer .foot {
-    background-color: black;
-    height: 8vh;
-    text-align: center;
-    padding: 2.5vh;
-    width: 100%;
-    margin-top: auto;
-}
-
-.fa-brands {
-    color: white;
+.social-links {
+    margin-top: 30px;
 }

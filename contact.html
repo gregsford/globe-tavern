@@ -8,81 +8,88 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/c6f3513d2f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-</head>
-<title>Contact The Globe Tavern</title>
+  <title>Contact The Globe Tavern</title>
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand logo" href="index.html">The Globe Tavern</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="events.html">Events</a>
-          <a class="nav-link" href="gallery.html">Gallery</a>
-          <a class="nav-link" href="#">Contact</a>
-        </div>
-      </div>
+  <nav class="nav-container">
+    <div class="logo">
+      <a href="FIXindex.html">The Globe Tavern</a>
+    </div>
+    <div class="nav-links">
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
   </nav>
 
-  <div class="contact">
-        <h2>Please contact us for any inquiries</h2>
-        <div class="contact-form row g-3 text-center">
-            <form action="https://formsubmit.co/gsford2020@gmail.com" method="POST">
-              <div class="col-md-4 offset-md-4 mb-3 p-3">
-                <label for="exampleFormControlInput1" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
-              </div>
-              <div class="col-md-4 offset-md-4 mb-3 p-3">
-                <label for="exampleFormControlInput1" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" name="email">
-              </div>
-              <div class="col-md-4 offset-md-4 mb-3 p-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
-              </div>
-              <div>
-                <button class="col-md-4 btn btn-bg" type="submit">CHEERS!</button>
-              </div>
-            </form>
-          </div>
+  <div class="container">
+    <div class="contact-container">
+      <div class="contact-form">
+        <p>Questions? Comments? Suggestions?
+          <br>We'd love to hear from you. Let us know what's happening on your side of the globe.</p>
+        <form action="https://formsubmit.co/02f2c5c1f8fdc46404ea30046c946cad" method="POST">
+          <!-- Make sure to reset the form page to Globes github page and delete test page -->
+          <!-- the link in action will need to be worked out with Rena
+              1. Set up action="https://formsubmit.co/your@email.com" to rjskillmaninc@gmail.com
+              2. Get file saved on Globes Github page
+              3. Fill out form information, hit submit
+              4. Check email for activation, copy and paste the string for me to edit in the file in github
+              5. 
+          -->
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- Disable captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next" value="success.html">
+          <!-- Put in full link to success page in value
+              For the success page, make it indentical to contact page, just replace the form with a thank you message and a beer img -->
+
+
+          <input type="text" name="First&nbsp;Name" id="firstName" class="form-half1" placeholder="First Name" required>
+          <input type="text" name="Last&nbsp;Name" id="lastName" class="form-half1" placeholder="Last Name" required>
+          <input type="email" name="Email" id="email" class="form-half1" placeholder="email" required>
+          <input type="text" name="Phone" id="phoneNumber" class="form-half1" placeholder="+1 (718) 867-5309">
+          <input type="text" name="Organization" id="organization" class="form-half1" placeholder="Organization">
+          <input type="text" name="message" class="form-half2" id="message" required>
+          <input type="submit" id="submit" value="Submit">
+        </form>
+        <div class="contact-phys">
+          <p>49-10 Skillman Avenue</p>
+          <p>Sunnyside, NY 11377</p>
+          <a href="tel:+15167822986">(718) 651-2558</a>
+        </div>
+      </div>
+      <div class="cheers">
+        <img src="images/gt9.jpg" alt="">
+        <p>Cheers!</p>
+      </div>
     </div>
 
-    <section>
-      <div class="index-img contact-img">
-          <img class="img-fluid " src="images/gt9.jpg" alt="">
-      </div>
-  </section>
-
-      <div class="welcome text-center contact-address">
-        <h2>49-10 Skillman Avenue</h2>
-        <h3>Queens , New York</h3>
-        <p>(718) 651-2558</p>
-        <!-- <p>email: rjskillmaninc@gmail.com</p> -->
-      </div>
   </div>
 
   <footer>
-    <div class="foot sticky-bottom">
-      <a href="http://www.facebook.com/The-Globe-Tavern-113474548686125/"><i
-          class="fa-xl fa-brands fa-facebook-f"></i></a>
+    <div class="social-links">
+        <a href="http://www.facebook.com/The-Globe-Tavern-113474548686125/" target="_blank"><i
+                class="fa-xl fa-brands fa-facebook-f"></i></a>
     </div>
-  </footer>
+    <div class="gsford">
+        <p>Website designed by <a href="https://gsford.tech/">G.S. Ford</a></p>
+    </div>
+</footer>
 
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
