@@ -332,12 +332,22 @@ cite {
     text-align: center;
     font-size: 2rem;
     text-shadow: 1px 1px #000;
-    margin-top: 130px;
+    /* margin-top: 130px; */
+    padd
+}
+
+.first-p {
+    margin-top: 100px;
+}
+
+.second-p {
+    margin-bottom: 40px;
 }
 
 form {
     background-color: rgba(0, 0, 0, 0.4);
-    margin-top: 10px;
+    margin: 10px 100px 0;
+    padding: 30px;
     border-radius: 5px;
     display: grid;
     grid-column: 1 / span 4;
@@ -345,9 +355,15 @@ form {
 
 form input {
     margin: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: solid 1px white;
+    padding: 5px 2px;
 }
 
-.form-half1 {
+/* .form-half1 {
     display: grid;
     grid-column: 1 / span 3;
 }
@@ -355,34 +371,60 @@ form input {
 .form-half2 {
     display: flex;
     justify-content: flex-end;
+} */
+
+.input-flex {
+    /* border: 3px red solid; */
+    display: flex;
+    justify-content: space-between;
 }
 
-#firstName {
-    
+.left-half {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
 }
 
-#lastName {
-    
+.left-half input {
+    width: 40%;
 }
 
-#email {
-    
+.right-half {
+    /* border: 3px solid yellow; */
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
-#phoneNumber {
-    
+.right-half input {
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
 }
 
-#organization {
-    
-}
-
-#message {
-    
+.submit-btn {
+    /* grid-column: 1 / span 3; */
+    text-align: center;
 }
 
 #submit {
-    grid-column: 1 / span 3;
+    padding: 10px 20px;
+    background-color: rgb(243, 130, 0);
+    border: 1px solid rgb(243, 130, 0);
+    text-transform: uppercase;
+}
+
+#submit:hover {
+    cursor: pointer;
+    /* background-color: rgba(243, 130, 0, 0.6); */
+    /* border: 0px solid rgba(243, 130, 0, 0.6); */
+    color: #fff;
+    transform: scale(1.15);
+    text-transform: uppercase;
+    text-shadow: 1px 1px #000;
 }
 
 .contact-phys {

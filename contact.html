@@ -16,7 +16,7 @@
 <body>
   <nav class="nav-container">
     <div class="logo">
-      <a href="FIXindex.html">The Globe Tavern</a>
+      <a href="index.html">The Globe Tavern</a>
     </div>
     <div class="nav-links">
       <ul class="nav-menu">
@@ -35,8 +35,10 @@
   <div class="container">
     <div class="contact-container">
       <div class="contact-form">
-        <p>Questions? Comments? Suggestions?
-          <br>We'd love to hear from you. Let us know what's happening on your side of the globe.</p>
+        <p class="first-p">Questions? Comments? Suggestions?</p>
+        <br>
+        <p class="second-p">We'd love to hear from you. Let us know what's happening on your side of the globe.</p>
+        <br>
         <form action="https://formsubmit.co/02f2c5c1f8fdc46404ea30046c946cad" method="POST">
           <!-- Make sure to reset the form page to Globes github page and delete test page -->
           <!-- the link in action will need to be worked out with Rena
@@ -55,15 +57,21 @@
           <input type="hidden" name="_next" value="success.html">
           <!-- Put in full link to success page in value
               For the success page, make it indentical to contact page, just replace the form with a thank you message and a beer img -->
-
-
-          <input type="text" name="First&nbsp;Name" id="firstName" class="form-half1" placeholder="First Name" required>
-          <input type="text" name="Last&nbsp;Name" id="lastName" class="form-half1" placeholder="Last Name" required>
-          <input type="email" name="Email" id="email" class="form-half1" placeholder="email" required>
-          <input type="text" name="Phone" id="phoneNumber" class="form-half1" placeholder="+1 (718) 867-5309">
-          <input type="text" name="Organization" id="organization" class="form-half1" placeholder="Organization">
-          <input type="text" name="message" class="form-half2" id="message" required>
-          <input type="submit" id="submit" value="Submit">
+          <div class="input-flex">  
+            <div class="left-half">  
+              <input type="text" name="First&nbsp;Name" id="firstName" class="form-half1" placeholder="First Name" required>
+              <input type="text" name="Last&nbsp;Name" id="lastName" class="form-half1" placeholder="Last Name" required>
+              <input type="email" name="Email" id="email" class="form-half1" placeholder="email" required>
+              <input type="text" name="Phone" id="phoneNumber" class="form-half1" placeholder="+1 (718) 867-5309">
+              <input type="text" name="Organization" id="organization" class="form-half1" placeholder="Organization">
+            </div>
+            <div class="right-half">
+              <input type="text" name="message" class="form-half2" id="message" placeholder="Enter your message here" required>
+            </div>
+          </div>
+          <div class="submit-btn">
+            <input type="submit" id="submit" value="Submit">
+          </div>
         </form>
         <div class="contact-phys">
           <p>49-10 Skillman Avenue</p>
@@ -71,10 +79,10 @@
           <a href="tel:+15167822986">(718) 651-2558</a>
         </div>
       </div>
-      <div class="cheers">
+      <!-- <div class="cheers">
         <img src="images/gt9.jpg" alt="">
         <p>Cheers!</p>
-      </div>
+      </div> -->
     </div>
 
   </div>
